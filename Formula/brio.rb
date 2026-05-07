@@ -5,21 +5,21 @@
 class Brio < Formula
   desc "A vim-style TUI for Bruno API collections"
   homepage "https://github.com/luca-trifilio/brio"
-  version "0.2.0"
+  version "0.2.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/luca-trifilio/brio/releases/download/v0.2.0/brio_0.2.0_Darwin_x86_64.tar.gz"
-      sha256 "602a3b7c54bebd1fb90180f639362f6f0d4784dcae9baf3777126a7802dd4b64"
+      url "https://github.com/luca-trifilio/brio/releases/download/v0.2.1/brio_0.2.1_Darwin_x86_64.tar.gz"
+      sha256 "f6349951fa3a132a439708398ca5db39eea3522798a65196f44dddb3158cf88d"
 
       define_method(:install) do
         bin.install "brio"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/luca-trifilio/brio/releases/download/v0.2.0/brio_0.2.0_Darwin_arm64.tar.gz"
-      sha256 "426bc96d08ff3a3fc7ef07da51fdb4f440658b42459ae3298b4a4173db481cc5"
+      url "https://github.com/luca-trifilio/brio/releases/download/v0.2.1/brio_0.2.1_Darwin_arm64.tar.gz"
+      sha256 "11d011331399d109fea3f0aeffc5c0f910c31e68107ea3d19154b07b221d1535"
 
       define_method(:install) do
         bin.install "brio"
@@ -29,15 +29,15 @@ class Brio < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/luca-trifilio/brio/releases/download/v0.2.0/brio_0.2.0_Linux_x86_64.tar.gz"
-      sha256 "03ef28f2d9ba27aca4b24f657d4399562e11d3007494ac03809373b19541d4fe"
+      url "https://github.com/luca-trifilio/brio/releases/download/v0.2.1/brio_0.2.1_Linux_x86_64.tar.gz"
+      sha256 "ebf2aad38bdc69d57147fd962c4eec82252b5850eaad148682c3d4805b321044"
       define_method(:install) do
         bin.install "brio"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/luca-trifilio/brio/releases/download/v0.2.0/brio_0.2.0_Linux_arm64.tar.gz"
-      sha256 "09b9fb48eb5582dd5c85a3ff56f6eaa3ff48b828ef21b533486dc180c737689a"
+      url "https://github.com/luca-trifilio/brio/releases/download/v0.2.1/brio_0.2.1_Linux_arm64.tar.gz"
+      sha256 "b8d4c8d8f2cf03d2c23b6b5f3778cf994b841e893f6a13233098d48da7f39fcc"
       define_method(:install) do
         bin.install "brio"
       end
